@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<ul class="nav nav-tabs">
+		<li clas="nav-item">
+			<a class="nav-link" href="#" >Link 1</a>
+		</li>
+		<li clas="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link 2</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Sublink 1</a>
+				<a class="dropdown-item" href="#">Sublink 2</a>
+				<a class="dropdown-item" href="#">Sublink 3</a>
+			</div>
+		</li>
+		<li clas="nav-item">
+			<a class="nav-link" href="#">Link 3</a>
+		</li>
+		<li clas="nav-item">
+			<a class="nav-link" href="#">Link 4</a>
+		</li>		
+	</ul>
+{% endblock content %}

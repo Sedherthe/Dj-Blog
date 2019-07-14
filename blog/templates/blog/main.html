@@ -1,0 +1,33 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<main role="main" class="container">
+		<div class="row">
+			<div class="col-md-8">
+				{% block content %}
+				{% endblock content %}
+			</div>
+			<div class="col-md-4">
+				<header>
+					<h1>Out Sidebar</h1>
+				</header>
+				<p class="text-muted">
+					You can put any info here you like.
+					<ul class="list-group">
+						<li class="list-group-item">
+							Latest Posts
+						</li>
+						<li class="list-group-item list-group-item-light">
+							Announcements
+						</li>
+						<li class="list-group-item list-group-item-light">
+							Calenders
+						</li>
+						<li class="list-group-item list-group-item-light">
+							etc
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</main>
+{% endblock content %}
