@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 # Lets assume we are getting data from the database for now
 posts = [
@@ -17,7 +18,7 @@ posts = [
 ]
 
 context = {
-		'posts' : posts
+		'posts' : Post.objects.all()
 	}
 
 # Create your views here.
