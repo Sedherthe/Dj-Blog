@@ -9,4 +9,5 @@ urlpatterns = [
 	path('navbar/', views.navbar, name='blog-navbar'),
 	path('collapse/', views.collapse, name='blog-collapse'),
 	path('article/', views.article, name='blog-article'),
+	path('form/', views.form, name='blog-form')
 ]

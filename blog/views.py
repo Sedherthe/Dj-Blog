@@ -46,3 +46,6 @@ def collapse(request):
 
 def article(request):
 	return render(request, 'blog/article.html', context)
+
+def form(request):
+	return(render(request, 'blog/form.html'))
