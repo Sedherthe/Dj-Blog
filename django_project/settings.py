@@ -121,3 +121,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# crispy forms by default user Bootstrap 2. Change to v4
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
