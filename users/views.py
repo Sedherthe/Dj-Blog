@@ -14,7 +14,10 @@ from .forms import UserRegisterForm
 
 # Create your views here.
 def register(request):
+	# Because we haven't given any action field to the form on the registration page, it'll be
+	# redirected to the same page as it is currently present.
 	if request.method == 'POST':
+		print("requested POST method: ", request)
 		form = UserRegisterForm(request.POST)
 		if form.is_valid():
 			# After submission
@@ -25,4 +28,5 @@ def register(request):
 			return redirect('user-login')
 	else: 
 		form = UserRegisterForm()
+	print("form is: ", form)
 	return render(request, 'users/registration.html', {'form': form})

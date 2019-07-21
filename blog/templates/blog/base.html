@@ -48,12 +48,19 @@
 				
 					<!-- Navbar Right Side -->
 					<div class="navbar-nav">
-						<a href="{% url 'user-login' %}" class="nav-item nav-link">
-							Login
-						</a>
-						<a href="{% url 'user-registration' %}" class="nav-item nav-link">
-							Register
-						</a>
+						{% if user.is_authenticated %}
+							<a class="nav-item nav-link">Welcome Yo!</a>
+							<a href="{% url 'user-logout' %}" class="nav-item nav-link">
+								Logout
+							</a>	
+						{% else %}
+							<a href="{% url 'user-login' %}" class="nav-item nav-link">
+								Login
+							</a>
+							<a href="{% url 'user-registration' %}" class="nav-item nav-link">
+								Register
+							</a>
+						{% endif %}
 					</div>
 				</div>
 			</div>
