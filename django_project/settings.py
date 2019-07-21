@@ -127,3 +127,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Change the default path after successful logins
 LOGIN_REDIRECT_URL = 'blog-home'
+
+# Default login url
+LOGIN_URL = 'user-login'
