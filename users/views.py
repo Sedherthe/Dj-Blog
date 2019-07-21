@@ -21,8 +21,8 @@ def register(request):
 			print("details are : ", request.POST)
 			form.save() # If everythign is okay
 			username = form.cleaned_data.get('username')
-			messages.success(request, f'Account created for {username}!')
-			return redirect('blog-home')
+			messages.success(request, f'Account created successfully. You can now Log In!')
+			return redirect('user-login')
 	else: 
 		form = UserRegisterForm()
 	return render(request, 'users/registration.html', {'form': form})
