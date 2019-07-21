@@ -124,3 +124,5 @@ STATIC_URL = '/static/'
 
 # crispy forms by default user Bootstrap 2. Change to v4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Change the default path after successful logins
