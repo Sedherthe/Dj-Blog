@@ -57,7 +57,7 @@
 							<a href="{% url 'user-login' %}" class="nav-item nav-link">
 								Login
 							</a>
-							<a href="{% url 'user-registration' %}" class="nav-item nav-link">
+							<az href="{% url 'user-registration' %}" class="nav-item nav-link">
 								Register
 							</a>
 						{% endif %}
@@ -70,8 +70,7 @@
 	<!-- Main block -->
 	<main role="main" class="container">
 		<div class="row">
-			<!-- Blog Posts -->
-			<div class="col-md-8">
+			<div class="container">
 				{% if messages %}
 					{% for message in messages %}
 						<div class="alert alert-{{ message.tags }}">
@@ -79,7 +78,9 @@
 						</div>
 					{% endfor %}
 				{% endif %}
-
+			</div>
+			<!-- Blog Posts -->
+			<div class="col-md-8 mt-3">
 				{% block content %}
 				{% endblock content %}
 			</div>
