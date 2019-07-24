@@ -13,7 +13,9 @@
 					</small>
 				</div>
 				<h2 class="article-title">
-					{{ post.title }}
+					<a class="article-title" href="{% url 'blog-detail' post.id %}">
+						{{ post.title }}
+					</a>
 				</h2>
 				<p class="article-content">
 					{{ post.content }}
