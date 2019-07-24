@@ -38,6 +38,7 @@ class PostListView(ListView):
 	template_name = 'blog/home.html' # Default path where it searches for template is ; blog/post_listview.html
 	context_object_name = 'posts' # object_list is the default name which it gives to the key of the dict.
 	ordering = ['-date_published']
+	paginate_by = 5
 
 #To add login functionality to class views.Use mixins
 class PostDetailView(DetailView):
